@@ -8,7 +8,7 @@ const Photos = () => {
   const [submited, setSubmited] = useState("");
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
   const deletePhoto = async (id) => {
     await fetch(`https://gallery-app-server.vercel.app/photos/${id}`, {
@@ -59,7 +59,7 @@ const Photos = () => {
     })
   }, []);
 
-  if (error) return <h1 style={{ width: "100%", textAlign: "center", marginTop: "20px" }} >Error!</h1>;
+  // if (error) return <h1 style={{ width: "100%", textAlign: "center", marginTop: "20px" }} >Error!</h1>;
 
   return (
     <>
